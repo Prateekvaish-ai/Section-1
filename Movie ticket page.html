@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+
+            body {
+                 
+                font-family: arial,sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+
+            }
+
+            .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            h1 {
+
+                text-align: center;
+
+            }
+
+            form {
+
+                   display: flex;
+                   flex-direction: column;
+
+            }
+
+            label {
+               
+                margin-top: 10px;
+
+            }
+
+            input, select, textarea {
+                                    
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+
+            }
+
+            button {
+
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+            }
+
+            button:hover {
+
+                background-color: #218838;
+
+            }
+
+            
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+    <h1>Movie Ticket Booking Form</h1>
+
+    <form>
+         
+         <!--Movie Selection-->
+         
+         <label for="Movie">Select Movie:</label>
+
+         <select name="Movie" id="Movie" required>
+
+            <option value="">--Select a Movie--</option>
+            <option value="Hum Sath Sath Hai">Hum Sath Sath Hai</option>
+            <option value="Stree 2">Stree 2</option>
+            <option value="Fighter">Fighter</option>
+
+         </select>
+
+         <br><br>
+
+         <!--Date Selection-->
+
+         <label for="date">Date:</label>
+         <input type="date" id="date" name="date" required>
+
+         <br><br>
+
+         <!--Time Selection-->
+
+         <label for="time">Time:</label>
+
+         <select name="time" id="time" required>
+
+            <option value="">--Select Time--</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="18:00">06:00 PM</option>
+            <option value="21:00">09:00 PM</option>
+
+         </select>
+
+         <br><br>
+
+         <!--Number of Tickets-->
+
+         <label for="tickets">Number of Tickets:</label>
+         <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+         <br><br>
+
+         <!--Name-->
+
+         <label for="name">Your Name:</label>
+         <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+         <br><br>
+
+         <!--Email-->
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+         <br><br>
+
+         <!--Phone Number-->
+
+         <label for="phone">Phone Number:</label>
+         <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+
+         <br><br>
+
+         <!--Submit Button-->
+
+         <button type="submit">Book Now</button>
+
+    </form>
+
+</div>
+</body>
+
+</html>
